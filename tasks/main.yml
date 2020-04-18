@@ -2,7 +2,7 @@
 - name: Set Hostname
 
   hostname:
-    name: "{{node_hostname}}"
+    name: "{{ node_hostname }}"
   register: sethostname
 
 - name: Reboot the machine
