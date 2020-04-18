@@ -3,9 +3,5 @@
 
   hostname:
     name: "{{ node_hostname }}"
-  register: sethostname
-
-- name: Reboot the machine
-  reboot:
-    reboot_timeout: 180
-  when: sethostname.changed
+    notify:
+      - reboot machine
