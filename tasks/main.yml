@@ -3,5 +3,5 @@
 
   hostname:
     name: "{{ node_hostname }}"
-    notify:
-      - reboot machine
+  notify:
+    - reboot machine
