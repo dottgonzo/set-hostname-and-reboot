@@ -2,4 +2,4 @@
 # handlers file for set-hostname-and-reboot
 - name: reboot machine
   reboot:
-    reboot_timeout: 180
+    reboot_timeout: 360
